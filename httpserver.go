@@ -23,7 +23,6 @@ func (c *CustomHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)  {
 
 
 func main() {
-    
     ln, err := net.Listen("tcp4", ":http")
     if err != nil {
         log.Fatal(err)
